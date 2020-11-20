@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root {
+    --light-color: #efefef;
+    --medium-color: #bdbdbd;
+    --dark-color: #8d8d8d;
+    --custom-black : #3b3b3b;
+}
+
+body {
+    background-color: whitesmoke;
+}
+.title {
+    font-family: "Staatliches";
+    font-size: 42px;
+    color: var(--custom-black);
+}
