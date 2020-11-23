@@ -13,6 +13,7 @@ body {
 }
 .title {
     font-family: "Staatliches";
-    font-size: 42px;
+    font-size: 46px;
     color: var(--custom-black);
+    padding: 150px 150px
 }
