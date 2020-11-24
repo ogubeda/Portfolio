@@ -5,15 +5,106 @@
     --light-color: #efefef;
     --medium-color: #bdbdbd;
     --dark-color: #8d8d8d;
-    --custom-black : #3b3b3b;
+    --custom-black : #1a1919;
+    --form-black: #252525;
+    --nav-black: #111111;
+    --custom-blue: #08fdd8;
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: var(--custom-black);
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--light-color);
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+    background: transparent;
+}
+
+
+.nav-bar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    flex: 1 1 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--nav-black);
+}
+
+.nav-bar__item {
+}
+header {
+    background-color: var(--custom-black);
+    flex: 1 1 80%;
+}
+footer {
+    flex: 1 1 100%;
+    padding-left: 170px;
+    width: 100%;
+    background-color: var(--nav-black);
+}
+article {
+    margin-left: 170px;
 }
 .title {
     font-family: "Staatliches";
-    font-size: 46px;
-    color: var(--custom-black);
+    letter-spacing: 1px;
+}
+
+.title--main {
+    font-size: 54px;
+    color: var(--light-color);
     padding: 150px 150px
+}
+
+.title--section {
+    font-size: 46px;
+    color: var(--custom-blue);
+}
+
+/* Formulario */
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    border: 0;
+    width: 70%;
+    background-color: var(--form-black);
+    height: 50px;
+    font-size: 16px;
+    color: var(--dark-color);
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    border: 0;
+    width: 70%;
+    background-color: var(--form-black);
+    font-size: 16px;
+    color: var(--dark-color);
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contact-form .contact-form__submit {
+    color: var(--custom-blue);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: 1px solid var(--custom-blue);
+    background: transparent;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 12px;
 }

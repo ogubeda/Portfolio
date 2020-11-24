@@ -6,57 +6,86 @@
         <link rel = "stylesheet" href = "css/main.css">
     </head>
     <body>
+        <nav class = "nav-bar">
+            <a class = "nav-bar__item" href = "#">Home</a>
+            <a class = "nav-bar__item" href = "#">Sobre mí</a>
+            <a class = "nav-bar__item" href = "#">Conocimientos</a>
+            <a class = "nav-bar__item" href = "#">Contacto</a>
+        </nav>
         <header>
-            <section><h1 class = "title">Hola! <br>Soy Oscar Gandia</h1></section>
+            <section><h1 class = "title  title--main">Hola! <br>Soy Oscar Gandia</h1></section>
         </header>
         <article>
             <section id = "about">
+                <h2 class = "title  title--section">Sobre mí</h2>
                 <p>Tengo 23 años, actualmente estoy estudiando Desarrollo de aplicaciones web, 
-                    y además trabajo como técnico de sistemas.
+                    y además trabajo como técnico de sistemas. Intento ser una persona organizada y
+                    a ratos soluciono problemas. Me declaro fan de los teclados mecánicos y de
+                    Spiderman.
+
+                    En un futuro me encantaria trabajar en proyectos ambiciosos y mejorar mis habilidades
+                    como desarrollador.
                 </p>
             </section>
-            <section id = "tools">
-                <h2>Herramientas</h2>
-                <ul>
-                    <li>GitHub</li>
-                    <li>Docker</li>
-                    <li>Wordpress</li>
-                    <li>Moodle</li>
-                    <li>GraphQL</li>
-                </ul>
-            </section>
-            <section id = "tecnologies">
-                <div id = "lenguajes">
-                    <h2>Lenguagues de programación</h2>
+            <div>
+                <h2 class = "title title--section">Conocimientos</h2>
+                <p>Me gusta bastante la parte del backend, aunque el diseño también tiene su punto.</p>
+                <section id = "tools">
+                    <h2>Herramientas</h2>
                     <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>GO</li>
-                        <li>CSS3</li>
-                        <li>HTML5</li>
+                        <li>GitHub</li>
+                        <li>Docker</li>
+                        <li>Wordpress</li>
+                        <li>Moodle</li>
+                        <li>GraphQL</li>
                     </ul>
-                </div>
-                <div id  = "frameworks">
-                    <h2>Frameworks</h2>
-                    <ul>
-                        <li>Node</li>
-                        <li>JQuery</li>
-                        <li>AngularJS</li>
-                        <li>Angular</li>
-                        <li>Laravel</li>
-                        <li>Gingonic</li>
-                    </ul>
-                </div>
-                <div id  = "databases">
-                    <h2>Bases de datos</h2>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                        <li>SQL Server</li>
-                    </ul>
-                </div>
+                </section>
+                <section id = "tecnologies">
+                    <div id = "lenguajes">
+                        <h2>Lenguagues de programación</h2>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>GO</li>
+                            <li>CSS3</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                    <div id  = "frameworks">
+                        <h2>Frameworks</h2>
+                        <ul>
+                            <li>Node</li>
+                            <li>JQuery</li>
+                            <li>AngularJS</li>
+                            <li>Angular</li>
+                            <li>Laravel</li>
+                            <li>Gingonic</li>
+                        </ul>
+                    </div>
+                    <div id  = "databases">
+                        <h2>Bases de datos</h2>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>SQL Server</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <h2 class = "title  title--section">Contacto</h2>
+                <p>Si tienes cualquier duda, o crees que me necesitas para tu proyecto aquí tienes un formulario
+                    para ponerte en contacto conmigo.
+                </p>
+                <form class = "contact-form" autocomplete="off">
+                    <input type = "text" id = "name" name = "name" placeholder="Nombre">
+                    <input type = "email" id = "email" name = "email" placeholder="Email">
+                    <input type = "text" id = "subject" name = "subject" placeholder="Asunto">
+                    <textarea name = "message" id = "message" rows = "10" cols = "50"></textarea>
+                    <input type = "submit" class = "contact-form__submit" value = "Enviar">
+                </form>
             </section>
         </article>
         <footer>
