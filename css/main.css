@@ -38,11 +38,17 @@ a, a:hover, a:active {
     flex: 1 1 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--nav-black);
+}
+.wrapper {
+    flex: 1 1 100%;
 }
 
 .nav-bar__item {
+    width: 50px;
+    color: var(--custom-blue);
 }
 header {
     background-color: var(--custom-black);
@@ -88,15 +94,32 @@ article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: auto;
+    width: 75%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .know-container__item  {
-    flex: 1 1 10%;
+    flex: 0 0 10%;
+    padding: 10px;
+    text-align: center;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+.know-container__item  div {
+    width: 75px;
+    padding: 10px;
+    height: 120px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.know-container__item div:hover {
+    background-color: var(--form-black);
 }
 
 .know-container__item__image {
-    width: 100px;
+    width: 75px;
 }
 
 /* Formulario */
@@ -111,6 +134,7 @@ article {
     box-sizing: border-box;
     display: block;
     margin-bottom: 15px;
+    outline: none;
 }
 
 .contact-form textarea {
@@ -123,6 +147,7 @@ article {
     box-sizing: border-box;
     display: block;
     margin-bottom: 15px;
+    outline: none;
 }
 
 .contact-form .contact-form__submit {
@@ -135,4 +160,13 @@ article {
     text-transform: uppercase;
     padding: 15px;
     font-size: 12px;
+    outline: none;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact-form .contact-form__submit:hover {
+    background-color: var(--custom-blue);
+    color: var(--custom-black);
 }
