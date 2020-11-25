@@ -1,99 +1,148 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf8">
-        <title>Oscar Gandia | Desarrollador Web</title>
-        <link rel = "stylesheet" href = "css/main.css">
-    </head>
-    <body>
-        <nav class = "nav-bar">
-            <a class = "nav-bar__item" href = "#">Home</a>
-            <a class = "nav-bar__item" href = "#">Sobre mí</a>
-            <a class = "nav-bar__item" href = "#">Conocimientos</a>
-            <a class = "nav-bar__item" href = "#">Contacto</a>
-        </nav>
-        <header>
-            <section><h1 class = "title  title--main">Hola! <br>Soy Oscar Gandia</h1></section>
-        </header>
-        <article>
-            <section id = "about">
-                <h2 class = "title  title--section">Sobre mí</h2>
-                <p>Tengo 23 años, actualmente estoy estudiando Desarrollo de aplicaciones web, 
-                    y además trabajo como técnico de sistemas. Intento ser una persona organizada y
-                    a ratos soluciono problemas. Me declaro fan de los teclados mecánicos y de
-                    Spiderman.
 
-                    En un futuro me encantaria trabajar en proyectos ambiciosos y mejorar mis habilidades
-                    como desarrollador.
-                </p>
+<head>
+    <meta charset="utf8">
+    <title>Oscar Gandia | Desarrollador Web</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <a class="nav-bar__item" href="#">Home</a>
+        <a class="nav-bar__item" href="#">Sobre mí</a>
+        <a class="nav-bar__item" href="#">Conocimientos</a>
+        <a class="nav-bar__item" href="#">Contacto</a>
+    </nav>
+    <header>
+        <section>
+            <h1 class="title  title--main">Hola! <br>Soy Oscar Gandia</h1>
+        </section>
+    </header>
+    <article>
+        <section id="about">
+            <h2 class="title  title--section">Sobre mí</h2>
+            <p class="description">Tengo 23 años, actualmente estoy estudiando Desarrollo de aplicaciones web,
+                y además trabajo como técnico de sistemas. Intento ser una persona organizada y
+                a ratos soluciono problemas. Me declaro fan de los teclados mecánicos y de
+                Spiderman.
+
+                En un futuro me encantaria trabajar en proyectos ambiciosos y mejorar mis habilidades
+                como desarrollador.
+            </p>
+        </section>
+        <div>
+            <h2 class="title title--section">Conocimientos</h2>
+            <p class="description">Me gusta bastante la parte del backend, aunque el diseño también tiene su punto.</p>
+            <section id="tools">
+                <h2 class="title  title--subsection">Herramientas</h2>
+                <div class="know-container">
+                    <article class="know-container__item">
+                        <img class="know-container__item__image" src="images/github.png">
+                        GitHub</article>
+                    <article class="know-container__item">
+                        <img class="know-container__item__image" src="images/docker.png">
+                        Docker</article>
+                    <article class="know-container__item">
+                        <img class="know-container__item__image" src="images/wordpress.png">
+                        Wordpress</article>
+                    <article class="know-container__item">
+                        <img class="know-container__item__image" src="images/moodle.png">
+                        Moodle</article>
+                    <article class="know-container__item">
+                        <img class="know-container__item__image" src="images/graphql.png">
+                        GraphQL</article>
+                </div>
             </section>
-            <div>
-                <h2 class = "title title--section">Conocimientos</h2>
-                <p>Me gusta bastante la parte del backend, aunque el diseño también tiene su punto.</p>
-                <section id = "tools">
-                    <h2>Herramientas</h2>
-                    <ul>
-                        <li>GitHub</li>
-                        <li>Docker</li>
-                        <li>Wordpress</li>
-                        <li>Moodle</li>
-                        <li>GraphQL</li>
-                    </ul>
-                </section>
-                <section id = "tecnologies">
-                    <div id = "lenguajes">
-                        <h2>Lenguagues de programación</h2>
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <li>GO</li>
-                            <li>CSS3</li>
-                            <li>HTML5</li>
-                        </ul>
+            <section id="tecnologies">
+                <div id="lenguajes">
+                    <h2 class="title  title--subsection">Lenguagues de programación</h2>
+                    <div class="know-container">
+                        <article class="know-container__item">
+                            Python<img class="know-container__item__image" src="images/python.png">
+                        </article>
+                        <article class="know-container__item">
+                            <img class="know-container__item__image" src="images/java.png">
+                            Java</article>
+                        <article class="know-container__item">
+                            <img class="know-container__item__image" src="images/javascript.png">
+                            Javascript</article>
+                        <article class="know-container__item">
+                            <img class="know-container__item__image" src="images/php.png">
+                            PHP</article>
+                        <article class="know-container__item">
+                            <img class="know-container__item__image" src="images/golang.png">
+                            GO</article>
+                        <article class="know-container__item">
+                            <img class="know-container__item__image" src="images/css.png">
+                            CSS</article>
+                        <article class="know-container__item">
+                            <img class="know-container__item__image" src="images/html.png">
+                            HTML</article>
                     </div>
-                    <div id  = "frameworks">
-                        <h2>Frameworks</h2>
-                        <ul>
-                            <li>Node</li>
-                            <li>JQuery</li>
-                            <li>AngularJS</li>
-                            <li>Angular</li>
-                            <li>Laravel</li>
-                            <li>Gingonic</li>
-                        </ul>
-                    </div>
-                    <div id  = "databases">
-                        <h2>Bases de datos</h2>
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                            <li>SQL Server</li>
-                        </ul>
-                    </div>
-                </section>
+            </section>
+        </div>
+        <div id="frameworks">
+            <h2 class="title  title--subsection">Frameworks</h2>
+            <div class="know-container">
+                <article class="know-container__item">
+                    Node<img class="know-container__item__image" src="images/node.png">
+                </article>
+                <article class="know-container__item">
+                    <img class="know-container__item__image" src="images/jquery.png">
+                    JQuery</article>
+                <article class="know-container__item">
+                    <img class="know-container__item__image" src="images/angularjs.png">
+                    AngularJS</article>
+                <article class="know-container__item">
+                    <img class="know-container__item__image" src="images/angular.png">
+                    Angular</article>
+                <article class="know-container__item">
+                    <img class="know-container__item__image" src="images/laravel.png">
+                    Laravel</article>
+                <article class="know-container__item">
+                    <img class="know-container__item__image" src="images/gingonic.png">
+                    Gingonic</article>
             </div>
-            <section>
-                <h2 class = "title  title--section">Contacto</h2>
-                <p>Si tienes cualquier duda, o crees que me necesitas para tu proyecto aquí tienes un formulario
-                    para ponerte en contacto conmigo.
-                </p>
-                <form class = "contact-form" autocomplete="off">
-                    <input type = "text" id = "name" name = "name" placeholder="Nombre">
-                    <input type = "email" id = "email" name = "email" placeholder="Email">
-                    <input type = "text" id = "subject" name = "subject" placeholder="Asunto">
-                    <textarea name = "message" id = "message" rows = "10" cols = "50"></textarea>
-                    <input type = "submit" class = "contact-form__submit" value = "Enviar">
-                </form>
-            </section>
-        </article>
-        <footer>
-            <section id = "social">
-                <a href = "#">Linkedin</a>
-                <a href = "#">Twitter</a>
-                <a href = "#">Instagram</a>
-            </section>
-        </footer>
-    </body>
+        </div>
+        <div id="databases">
+            <h2 class="title  title--subsection">Bases de datos</h2>
+            <div class="know-container">
+                <article class="know-container__item">
+                    MongoDB<img class="know-container__item__image" src="images/mongodb.png">
+                </article>
+                <article class="know-container__item">
+                    <img class="know-container__item__image" src="images/mysql.png">
+                    MySQL</article>
+                <article class="know-container__item">
+                    <img class="know-container__item__image" src="images/sqlserver.png">
+                    SQL Server</article>
+            </div>
+        </div>
+        </section>
+        </div>
+        <section>
+            <h2 class="title  title--section">Contacto</h2>
+            <p class="description">Si tienes cualquier duda, o crees que me necesitas para tu proyecto aquí tienes un
+                formulario
+                para ponerte en contacto conmigo.
+            </p>
+            <form class="contact-form" autocomplete="off">
+                <input type="text" id="name" name="name" placeholder="Nombre">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="text" id="subject" name="subject" placeholder="Asunto">
+                <textarea name="message" id="message" rows="10" cols="50"></textarea>
+                <input type="submit" class="contact-form__submit" value="Enviar">
+            </form>
+        </section>
+    </article>
+    <footer>
+        <section id="social">
+            <a href="#">Linkedin</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </section>
+    </footer>
+</body>
+
 </html>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 :root {
     --light-color: #efefef;
@@ -9,6 +10,7 @@
     --form-black: #252525;
     --nav-black: #111111;
     --custom-blue: #08fdd8;
+    --violet: #ff0066;
 }
 
 body {
@@ -50,6 +52,7 @@ footer {
     flex: 1 1 100%;
     padding-left: 170px;
     width: 100%;
+    margin-top: 50px;
     background-color: var(--nav-black);
 }
 article {
@@ -69,6 +72,31 @@ article {
 .title--section {
     font-size: 46px;
     color: var(--custom-blue);
+}
+
+.title--subsection {
+    font-size: 38px;
+    color: var(--violet);
+}
+
+.description {
+    font-size: 18px;
+    font-family: "Raleway";
+}
+
+.know-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.know-container__item  {
+    flex: 1 1 10%;
+}
+
+.know-container__item__image {
+    width: 100px;
 }
 
 /* Formulario */
