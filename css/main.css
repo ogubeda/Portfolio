@@ -59,10 +59,17 @@ header {
 }
 footer {
     flex: 1 1 100%;
-    padding-left: 170px;
     width: 100%;
     margin-top: 50px;
     background-color: var(--nav-black);
+    padding: 50px;
+    padding-left: 170px;
+}
+
+.footer-link svg {
+    width: 40px;
+    color: var(--dark-color);
+    margin: 15px;
 }
 article {
     margin-left: 170px;
