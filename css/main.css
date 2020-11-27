@@ -71,6 +71,10 @@ footer {
     color: var(--dark-color);
     margin: 15px;
 }
+
+.footer-link svg:hover {
+    color: var(--medium-color);
+}
 article {
     margin-left: 170px;
 }
